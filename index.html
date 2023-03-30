@@ -8,125 +8,18 @@
 		<title>Agile-Vida</title>
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@300&display=swap'); 
-				@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
-		</style>
-		<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
-	</head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Delicious+Handrawn&display=swap');
+        </style>
 
-	<body>
-		<h id="atras"><a href="mensaje.html"> <- </a></h>
-		<H>Agile en nuestras vidas</H>
-		<main id="principal">
-			<img id="circulo-izquierda" src="imagenes/circulo_izquierda.svg"alt="Logo de la barberia Alura">
-			<img id="texto-operar" src="imagenes/nombres/Co-operar.svg">
-			<img id="circulo-derecha" src="imagenes/circulo_derecha.svg">
-			<img id="texto-crear" src="imagenes/nombres/Co-crear.svg">
-			<img id="circulo-bajo" src="imagenes/circulo_bajo.svg">
-			<img id="texto-ejecutar" src="imagenes/nombres/Co-ejecutar.svg">
+	<body class="pag-mensaje">
 
-			<img id="cultura" src="imagenes/cultura.svg">
-			<img id="icono-cultura" src="imagenes/iconos/cultura.svg">
-			<img id="nombre-cultura" src="imagenes/nombres/Cultura.svg">
-			
-			<img id="desarrollar" src="imagenes/desarrollar.svg">
-			<img id="icono-desarrollar" src="imagenes/iconos/desarrollar.svg">
-			<img id="nombre-desarrollar" src="imagenes/nombres/Desarrollar.svg">
-					
-			<img id="razonar" src="imagenes/razonar.svg">
-			<img id="icono-razonar" src="imagenes/iconos/razonar.svg">
-			<img id="nombre-razonar" src="imagenes/nombres/Razonar.svg">
-			
-			<img id="operar" src="imagenes/operar.svg">
-			<img id="icono-operar" src="imagenes/iconos/operar.svg">
-			<img id="nombre-operar" src="imagenes/nombres/Operar.svg">
-			
-			<img id="aprender" src="imagenes/aprender.svg">
-			<img id="icono-aprender" src="imagenes/iconos/aprender.svg">
-			<img id="nombre-aprender" src="imagenes/nombres/Aprender.svg">
-			
-			<img id="descubrir" src="imagenes/descubrir.svg">
-			<img id="icono-descubrir" src="imagenes/iconos/descubrir.svg">
-			<img id="nombre-descubrir" src="imagenes/nombres/Descubrir.svg">
-			
-			<img id="visualizar" src="imagenes/visualizar.svg">
-			<img id="icono-visualizar" src="imagenes/iconos/visualizar.svg">
-			<img id="nombre-visualizar" src="imagenes/nombres/Visualizar.svg">
-		</main>
+        <h1>Como seres humanos</h>
+        <h1>podemos ser muchas cosas</h>
+        <h2>Pero, sobre todo...</h>
+        <h3><a href="mensaje.html">somos Saltos de Fe</a></h3>
 
-		<div id="ventana-emergente">
-			<span id="cerrar">X</span>
-			<p id="texto">default text</p>
-		</div>
-
-		<script>
-
-			var imagenes = document.querySelectorAll("img");
-
-			for (var i = 0; i < imagenes.length; i++) {
-				imagenes[i].addEventListener("click", function() {
-					var idImagen = this.id;
-					
-					switch (idImagen) {
-						case ("icono-cultura"):
-						document.getElementById("icono-cultura").addEventListener("click", implementarVentana("Como pensamos, sentimos y vivimos. Apertura a nuevas formas"));
-						break;
-
-						case ("icono-desarrollar"):
-						document.getElementById("icono-desarrollar").addEventListener("click", implementarVentana("Lo que hagas, hazlo bien. Hazlo por ti"));
-						break;
-
-						case ("icono-razonar"):
-						document.getElementById("icono-razonar").addEventListener("click", implementarVentana("Mirar en retrospectiva. Aprender del pasado"));
-						break;
-
-						case ("icono-operar"):
-						document.getElementById("icono-operar").addEventListener("click", implementarVentana("Revisa tu proceso ¿Sí estás haciendo lo que te genere bienestar?"));
-						break;
-
-						case ("icono-aprender"):
-						document.getElementById("icono-aprender").addEventListener("click", implementarVentana("Falla rápido, aprende rápido. Aprende constantemente!!!!"));
-						break;
-
-						case ("icono-descubrir"):
-						document.getElementById("icono-descubrir").addEventListener("click", implementarVentana("Descubre el problema: coge al toro por los cuernos"));
-						break;
-
-						case ("icono-visualizar"):
-						document.getElementById("icono-visualizar").addEventListener("click", implementarVentana("Desing Thinking  ->Necesidad:¿Qué me genera valor? - MVP"));
-						break;
-
-						case ("texto-operar"):
-						document.getElementById("texto-operar").addEventListener("click", implementarVentana("La vida no se vive sola. Crea grupos diversos"));
-						break;
-
-						case ("texto-crear"):
-						document.getElementById("texto-crear").addEventListener("click", implementarVentana("Infórmate. Las nuevas ideas no nacen de la nada"));
-						break;
-						
-						case ("texto-ejecutar"):
-						document.getElementById("texto-ejecutar").addEventListener("click", implementarVentana("Los pequeños logros como entregables constantes"));
-						break;
-					}
-				
-				});
-			}
-			
-			function implementarVentana(mensajeVentana) {
-			document.getElementById("ventana-emergente").style.display = "block";
-			document.getElementById("principal").style.filter = "blur(10px)";
-			document.getElementById("texto").textContent = mensajeVentana;
-			}
-		
-			document.getElementById("cerrar").addEventListener("click", function() {
-			document.getElementById("ventana-emergente").style.display = "none";
-			document.getElementById("principal").setAttribute("style", "filter: none");
-			});
-		</script>
-
-	</body>
-
-
-</html>
-
+    </body>
