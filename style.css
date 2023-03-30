@@ -175,10 +175,10 @@ h {
 
     display: none;
 	position: relative;
-	top: 50%;
-	left: 50%;
+	top: 170%;
+	left: 40%;
 	transform: translate(15%, 0%);
-	width: 200px;
+	width: 270px;
 	height: 270px;
 
 	/* White */
@@ -207,9 +207,9 @@ h {
     font-family: 'Delicious Handrawn';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px; 
+    font-size: 40px; 
     text-align: center;
-    padding: 20px;
+    padding: 9px;
 }
 
 #icono-visualizar:hover, #cerrar:hover, #icono-descubrir:hover, 
@@ -224,12 +224,12 @@ h {
     font-family: 'Amatic SC';
     font-style: normal;
 
-    padding: 67px 0;
+    padding: 180px 0;
     width: 840px;
 	margin: 0 auto;
     display: block;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 120px;
     line-height: 120%;
     text-align: center;
     color: #4884c0;
